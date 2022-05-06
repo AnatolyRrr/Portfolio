@@ -1,0 +1,649 @@
+@font-face {
+    font-family: "ubuntubold";
+    src: url("fonts/ubuntubold.woff") format("woff"),
+        url("fonts/ubuntubold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ubuntumedium";
+    src: url("fonts/ubuntumedium.woff") format("woff"),
+        url("fonts/ubuntumedium.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubunturegular';
+    src: url('fonts/ubunturegular.woff') format('woff'),
+        url('fonts/ubunturegular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'ubuntumedium', serif;
+    font-size: 24px;
+    line-height: 28px;
+    color: #181818;
+    background-color: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'ubuntubold', serif;
+    font-size: 48px;
+    line-height: 55px;
+    margin: 0;
+    text-align: center;
+}
+
+.title::before,
+.title::after {
+    content: '';
+    margin: 0 20px;
+    height: 4px;
+    width: 30px;
+    background-color: #828282;
+}
+
+/* header */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.header__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.header__logo-img {
+    width: 100px;
+    height: 26.78px;
+}
+
+.header__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header__link {
+    color: #828282;
+    font-family: "ubuntubold", serif;
+    text-decoration: none;
+    padding: 15px 30px;
+    transition: color ease-in 0.4s;
+}
+
+.header__link:hover {
+    color: #000000;
+}
+
+.header__item:last-child .header__link {
+    padding-right: 0;
+}
+
+.header__hamburger {
+    display: none;
+}
+
+/* primary */
+
+.primary {
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+
+.primary__info {
+    display: flex;
+    margin-bottom: 35px;
+}
+
+.primary__title {
+    max-width: 240px;
+    font-family: 'ubuntubold', serif;
+    font-size: 48px;
+    line-height: 55px;
+    margin: 50px 100px 0 20px;
+}
+
+.primary__text {
+    max-width: 240px;
+    margin: 0;
+    padding-top: 60px;
+}
+
+.primary__image-user {
+    background-color: #ffffff;
+    text-align: center;
+    line-height: 0;
+}
+
+/* about me */
+
+.about {
+    background-color: #f6f6f6;
+}
+
+.about__title {
+    padding-top: 90px;
+}
+
+.about__info {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 50px 0 66px;
+}
+
+.about__text {
+    margin: 0;
+    text-align: center;
+    padding-bottom: 24px;
+}
+
+/* skills_wrap */
+
+.skills__title {
+    padding: 60px 0 50px;
+}
+
+.skills__text {
+    margin: 0;
+    padding-bottom: 24px;
+    text-align: center;
+}
+
+.skills__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 56px 32px 85px;
+    flex-wrap: wrap;
+}
+
+.skills__item {
+    padding-bottom: 62px;
+}
+
+.skills__name {
+    font-family: 'ubuntubold', serif;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    margin: 0;
+    padding: 5px 0 18px;
+}
+
+.skills__progress {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    max-width: 166px;
+}
+
+/* portfolio */
+
+.portfolio {
+    padding: 90px 0 66px;
+    background-color: #f6f6f6;
+}
+
+.portfolio__title {
+    padding-bottom: 35px;
+}
+
+.portfolio__item-text {
+    text-align: center;
+    margin: 0;
+    padding: 24px 0;
+}
+
+.portfolio__item-1 {
+    display: none;
+}
+
+/* footer */
+
+.contact {
+    padding: 80px 0 90px;
+}
+
+.contact__wrap {
+    max-width: 378px;
+    margin: 0 auto; 
+}
+
+.contact__text {
+    margin: 0;
+    padding: 50px 0 53px;
+    text-align: center;
+}
+
+.button__wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.contact__button {
+    font-family: 'ubuntubold', serif;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 11px 43px 12px;
+    color: #ffffff;
+    background-color: #181818;
+    border-radius: 30px;
+    border-color: transparent;
+    cursor: pointer;
+    transition: background-color ease-in 0.1s;
+}
+
+.contact__button:hover {
+    background-color: #1b5520;
+}
+
+.contact__button:active {
+    box-shadow: 0px 0px 5px 0px #000000;
+}
+
+.social__list {
+    list-style: none;
+    padding: 47px 0 51px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 300px;
+}
+
+.social__text {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 21px;
+    color: #828282;
+    max-width: 278px;
+}
+
+/* modal */
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .75);
+}
+
+.modal--active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__wrap {
+    width: 850px;
+    background-color: #f6f6f6;
+}
+
+.btn__close-wrap {
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 30px 0 0;
+}
+
+.btn__close {
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    font-size: 0;
+    border: 0;
+    background-color: #f6f6f6;
+    cursor: pointer;
+}
+
+.btn__close::before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 2px;
+    right: 3px;
+    width: 30px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(45deg);
+    transition: all ease-in 0.1s;
+}
+
+.btn__close::after {
+    content: "";
+    display: block;
+    position: relative;
+    bottom: 2px;
+    right: 3px;
+    width: 30px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(-45deg);
+    transition: all ease-in 0.1s;
+}
+
+.btn__close:hover::before,
+.btn__close:hover::after {
+    background-color: #1b5520;
+}
+
+.modal__title {
+    text-align: center;
+    font-family: 'ubuntubold', serif;
+    font-size: 32px;
+    line-height: 37px;
+    margin: 36px 0 60px;
+    text-transform: uppercase;
+}
+
+.modal__form {
+    max-width: 623px;
+    margin: 0 auto;
+}
+
+.user__info {
+    font-family: 'ubunturegular', serif;
+    font-size: 34px;
+    line-height: 39px;
+    margin: 0 0 35px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.user__field {
+    background-color: #f6f6f6;
+    width: 438px;
+    height: 39px;
+    padding: 0;
+    margin-left: 43px;
+    border-color: #000000;
+    border: 0;
+    border-bottom: 3px solid #000000;
+    font-size: 36px;
+    line-height: 41px;
+    outline: none;
+}
+
+.user__field:focus {
+    border-bottom: 3px solid #1b5520;
+}
+
+.submit__wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 65px 0 67px;
+
+}
+
+.agreement {
+    font-family: 'ubunturegular', serif;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0;
+    max-width: 231px;
+}
+
+.btn__submit {
+    font-family: 'ubuntubold', serif;
+    font-size: 30px;
+    line-height: 34px;
+    color: #ffffff;
+    background-color: #181818;
+    text-align: center;
+    width: 350px;
+    height: 75px;
+    padding: 0;
+    border-radius: 60px;
+    border-color: transparent;
+    transition: background-color ease-in 0.1s;
+}
+
+.btn__submit:hover {
+    background-color: #1b5520;
+}
+
+.btn__submit:active {
+    box-shadow: 0px 0px 5px 0px #000000;
+}
+
+
+/* media */
+
+@media (max-width: 1000px) {
+    .container {
+        width: 100%;
+    }
+
+    .header__link {
+        padding: 15px 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    .title {
+        font-size: 36px;
+        line-height: 41px;
+        display: block;
+    }
+
+    .header__list {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 40px 30px;
+        background-color: #ffffff;
+        transform: translateY(-100%);
+        transition: transform ease-in .4s;
+        z-index: 5;
+    }
+
+    .header__list--active {
+        transform: translateY(0);
+    }
+
+    .header__link {
+        display: block;
+        font-size: 34px;
+        line-height: 39px;
+        padding: 25px 0;
+    }
+
+    .header__hamburger {
+        display: block;
+    }
+
+    .hamburger {
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        font-size: 0;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+        z-index: 6;
+    }
+
+    .hamburger::before,
+    .hamburger::after {
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 8px;
+        width: 35px;
+        height: 4px;
+        background-color: #000000;
+        box-shadow: 0 8px 0 0 #000000,
+                    0 16px 0 0 #000000;
+        transition: all ease-in .4s;
+    }
+
+    .hamburger--active::before {
+        top: 25px;
+        transform: rotate(45deg);
+        box-shadow: none;
+    }
+
+    .hamburger--active::after {
+        top: 25px;
+        transform: rotate(-45deg);
+        box-shadow: none;
+    }
+
+    .primary {
+        padding-bottom: 68px;
+    }
+
+    .primary__title {
+        margin: 0;
+        font-size: 36px;
+        line-height: 41px;
+    }
+
+    .primary__info{
+        display: block;
+        margin: 0 auto 30px;
+        width: 335px;
+    }
+
+    .primary__text {
+        padding-top: 20px;
+    }
+
+    .about__info {
+        padding: 30px 0 26px;
+    }
+
+    .skills__title {
+        padding: 70px 0 31px;
+    }
+
+    .skills__list {
+        padding: 21px 32px 85px;
+    }
+
+    .portfolio {
+        padding: 50px 0 20px;
+    }
+
+    .portfolio__title {
+        padding-bottom: 25px;
+    }
+
+    .portfolio__item-text {
+        padding: 30px 0;
+    }
+
+    .contact {
+        padding: 28px 0 30px;
+    }
+
+    .contact__text {
+        padding: 29px 0 53px;
+    }
+
+    .social__list {
+        padding: 50px 0 39px;
+        max-width: 246px;
+    }
+    
+    .modal--active {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .modal__wrap {
+        width: 375px;
+    }
+    
+    .btn__close-wrap {
+        margin: 25px 25px 0 0;
+    }
+    
+    .modal__title {
+        font-size: 28px;
+        line-height: 32px;
+        margin: 30px 0 30px;
+    }
+    
+    .modal__form {
+        max-width: 350px;
+    }
+    
+    .user__info {
+        font-size: 26px;
+        line-height: 30px;
+        margin: 0 0 30px;
+        display: block;
+    }
+    
+    .user__field {
+        background-color: #f6f6f6;
+        width: 350px;
+        height: 27px;
+        margin:  18px 0 0;
+        font-size: 22px;
+    }
+    
+    .submit__wrap {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 60px 0 40px;
+    
+    }
+    
+    .agreement {
+        margin-top: 20px;
+    }
+
+
+}
