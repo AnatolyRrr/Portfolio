@@ -590,6 +590,7 @@ img {
 
     .portfolio__item-text {
         padding: 30px 0;
+        text-align: center;
     }
 
     .contact {
