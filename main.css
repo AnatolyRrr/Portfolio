@@ -223,10 +223,20 @@ img {
     padding-bottom: 35px;
 }
 
+.portfolio__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .portfolio__item-text {
-    text-align: center;
-    margin: 0;
-    padding: 24px 0;
+    padding-top: 12px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.portfolio__item-text:hover {
+    color:#1b5520
 }
 
 .portfolio__item-1 {
