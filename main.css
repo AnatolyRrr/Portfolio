@@ -104,7 +104,7 @@ img {
 }
 
 .header__link:hover {
-    color: #000000;
+    color: #0e5c07;
 }
 
 .header__item:last-child .header__link {
@@ -146,6 +146,17 @@ img {
     text-align: center;
     line-height: 0;
 }
+
+.github-link {
+    text-decoration: none;
+    color: #181818;
+    transition: color ease-in .3s;
+}
+
+.github-link:hover {
+    color: #0e5c07;
+}
+
 
 /* about me */
 
@@ -216,7 +227,7 @@ img {
 /* portfolio */
 
 .portfolio {
-    padding: 90px 0 66px;
+    padding: 90px 0 16px;
     background-color: #f6f6f6;
 }
 
@@ -228,19 +239,19 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 50px;
+    text-align: center;
 }
 
-.portfolio__item-text {
+.portfolio__item-content {
     padding-top: 12px;
     color: #000000;
+    transition: color ease-in .3s;
+    text-decoration: none;
 }
 
-.portfolio__item-text:hover {
-    color:#1b5520
-}
-
-.portfolio__item-1 {
-    display: none;
+.portfolio__item-content:hover {
+    color:#0e5c07;
 }
 
 /* footer */
@@ -279,7 +290,7 @@ img {
 }
 
 .contact__button:hover {
-    background-color: #1b5520;
+    background-color: #0e5c07;
 }
 
 .contact__button:active {
@@ -326,6 +337,21 @@ img {
 .modal__wrap {
     width: 850px;
     background-color: #f6f6f6;
+
+    animation-duration: 0.55s;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0px, -100%, 0px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 .btn__close-wrap {
@@ -372,7 +398,7 @@ img {
 
 .btn__close:hover::before,
 .btn__close:hover::after {
-    background-color: #1b5520;
+    background-color: #0e5c07;
 }
 
 .modal__title {
@@ -413,7 +439,7 @@ img {
 }
 
 .user__field:focus {
-    border-bottom: 3px solid #1b5520;
+    border-bottom: 3px solid #0e5c07;
 }
 
 .submit__wrap {
@@ -447,7 +473,7 @@ img {
 }
 
 .btn__submit:hover {
-    background-color: #1b5520;
+    background-color: #0e5c07;
 }
 
 .btn__submit:active {
