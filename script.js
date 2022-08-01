@@ -93,7 +93,7 @@ writeMe.addEventListener('click', () => {
 
 modalWindow.addEventListener('click', (event) => {
     closeModal(event, modalWindow, '.btn__close', '.modal__wrap', );
-    if(!isOpenModal) {
+    if(!isOpenModal && modalInputs) {
         clearInputs(modalInputs);
     }
 });
