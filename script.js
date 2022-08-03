@@ -5,23 +5,18 @@ const mainHamburger = document.querySelector('.hamburger');
 let isOpenMenu = false;
 
 function showMenu() {
-    if(!isOpenMenu &&
-        mainMenu &&
-        mainHamburger
-    ) {
-        mainMenu.classList.add('header__list--active');
-        mainHamburger.classList.add('hamburger--active');
-        isOpenMenu = true;
-    } else if (
-        isOpenMenu &&
-        mainMenu &&
-        mainHamburger
-    ) {
-        mainMenu.classList.remove('header__list--active');
-        mainHamburger.classList.remove('hamburger--active');
-        isOpenMenu = false;
+    if(mainMenu && mainHamburger) {
+        if(!isOpenMenu) {
+            mainMenu.classList.add('header__list--active');
+            mainHamburger.classList.add('hamburger--active');
+            isOpenMenu = true;
+        } else {
+            mainMenu.classList.remove('header__list--active');
+            mainHamburger.classList.remove('hamburger--active');
+            isOpenMenu = false;
+        }
     }
-}
+};
 
 mainHamburger.onclick = showMenu;
 
